@@ -1,0 +1,27 @@
+<html>
+<body>
+ 
+<script type="text/javascript">
+	document.write("<p style=\"font-size: 20px; color: green;\"><br> Menu <br></p>");
+	document.write("<p style=\"font-size: 20px; color: red;\"><br> 1 - czerwony <br></p>");
+	document.write("<p style=\"font-size: 20px; color: blue;\"><br> 2 - niebieski <br></p>");
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+ if(liczba==1){
+ document.write ("<p style=\"font-size: 7; color: red;\"><br> Wczytałeś kolor czerwony <br></p>");
+ }
+ 
+ if(liczba==2){
+  document.write ("<p style=\"font-size: 1; color: blue;\"><br> Wczytałeś kolor niebieski<br></p>");
+ }
+ }
+</script>
+ 
+<form id="formularz" action=""><br />
+Wpisz liczbę 1 lub 2: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+
+</body>
+</html>
